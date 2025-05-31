@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ Recipe Finder App
 
-## Getting Started
+A Next.js application that allows users to search for recipes with filters, view results, and read detailed information about each recipe. Built with the Spoonacular API and styled using Tailwind CSS.
 
-First, run the development server:
+## 🚀 Getting Started
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/recipe-finder-app.git
+cd recipe-finder-app
+```
+
+2. **Install dependencies**
+
+```bash
+pnpm install
+```
+
+3. **Start the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗 Features
+- Search for recipes using query, cuisine type, or preparation time
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- View recipe results with images and titles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Open recipe details with ingredients, summary, and prep info
 
-## Learn More
+- API response caching (1 minute)
 
-To learn more about Next.js, take a look at the following resources:
+- Styled with Tailwind CSS and shadcn/ui
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Loading states handled with React Suspense
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Error handling
 
-## Deploy on Vercel
+## Project Structure
+- /app – route handlers and pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- /shared – types, API instance, and utility functions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- /features – isolated UI logic like the search form
+
+## 🧪 Code Quality
+- ESLint and Prettier configured
+
+- Run npm run lint to check for lint issues
+
+- Run npm run format to auto-format code
